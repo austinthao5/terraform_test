@@ -1,5 +1,5 @@
   resource "aws_s3_bucket" "b" {
-  bucket = "austin-bucket-test"
+  bucket = var.austin-test-tf-bucket
   acl = "private"
   bucket_name = "NAME"
 

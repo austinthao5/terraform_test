@@ -1,7 +1,9 @@
-  resource "aws_s3_bucket" "b" {
-  acl = "private"
+resource "aws_s3_bucket" "b" {
+  bucket = "my-tf-test-bucket"
+  acl    = "private"
 
   tags = {
-    Name = "Austins bucket"
+    Name        = "My bucket"
+    Environment = "Dev"
   }
 }

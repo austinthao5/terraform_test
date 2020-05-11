@@ -2,6 +2,6 @@
   acl = "private"
 
   tags = {
-    Name        = "Austins bucket"
+    Name = "Austins bucket"
   }
 }

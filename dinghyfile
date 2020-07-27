@@ -7,7 +7,7 @@
   "pipelines": [
     {
       "application": "dinghytestapp",
-      "name": "dingypipeline",
+      "name": "changeNameofPipeline",
       "stages": [
         {
           "name": "one",

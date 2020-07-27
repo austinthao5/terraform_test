@@ -2,7 +2,7 @@
   "application": "dinghytestapp",
   "spec": {
     "email":"austin.thao@armory.io",
-    "description":"TESTING DINGHY"
+    "description":"TESTING DINGHY AGAIN"
   },
   "pipelines": [
     {

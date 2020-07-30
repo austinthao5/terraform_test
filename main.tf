@@ -7,3 +7,10 @@ resource "aws_s3_bucket" "b" {
     Environment = "Dev"
   }
 }
+
+
+provider "artifactory" {
+  url = "Test"
+  username = "test"
+  password = "test"
+}

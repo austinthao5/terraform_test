@@ -8,9 +8,7 @@ resource "aws_s3_bucket" "b" {
   }
 }
 
-
-provider "artifactory" {
-  url = "Test"
-  username = "test"
-  password = "test"
+resource "artifactory_user" "foobar" {
+	name  = "the.dude"
+  email = "the.dude@domain.com"
 }

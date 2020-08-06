@@ -34,7 +34,7 @@ resource "artifactory_user" "foobar5" {
   	email = "EMAIL5@EMAIL.COM"
 }
 
-resource "artifactory_user" "foobar6" {
-	name  = "NAME_HERE_TEST6"
-  	email = "EMAIL6@EMAIL.COM"
+resource "artifactory_user" "foobar7" {
+	name  = "NAME_HERE_TEST7"
+  	email = "EMAIL7@EMAIL.COM"
 }

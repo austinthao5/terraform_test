@@ -4,6 +4,6 @@ provider "artifactory" {
 }
 
 resource "artifactory_user" "foobar" {
-	name  = "NAME_HERE"
+	name  = "NAME_HERE_TEST"
   	email = "EMAIL@EMAIL.COM"
 }

@@ -165,3 +165,39 @@ resource "artifactory_user" "foobar7" {
 	name  = "NAME_HERE_TEST7"
   	email = "EMAIL7@EMAIL.COM"
 }
+
+
+resource "artifactory_user" "foobar7" {
+	name  = "NAME_HERE_TEST7"
+  	email = "EMAIL7@EMAIL.COM"
+}
+
+
+resource "artifactory_user" "foobar7" {
+	name  = "NAME_HERE_TEST7"
+  	email = "EMAIL7@EMAIL.COM"
+}
+
+
+resource "artifactory_user" "foobar7" {
+	name  = "NAME_HERE_TEST7"
+  	email = "EMAIL7@EMAIL.COM"
+}
+
+
+resource "artifactory_user" "foobar7" {
+	name  = "NAME_HERE_TEST7"
+  	email = "EMAIL7@EMAIL.COM"
+}
+
+
+resource "artifactory_user" "foobar7" {
+	name  = "NAME_HERE_TEST7"
+  	email = "EMAIL7@EMAIL.COM"
+}
+
+
+resource "artifactory_user" "foobar7" {
+	name  = "NAME_HERE_TEST7"
+  	email = "EMAIL7@EMAIL.COM"
+}

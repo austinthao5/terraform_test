@@ -1,3 +1,3 @@
-provider "hxp" {
+provider "artifactory" {
 
 }

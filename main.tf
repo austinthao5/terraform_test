@@ -1,3 +1,5 @@
-resource "example_server" "my-server-name" {
-	uuid_count = "1"
+resource "kubernetes_namespace" "example" {
+  metadata {
+    name = "my-first-namespace"
+  }
 }

@@ -2,7 +2,7 @@ terraform {
     required_providers {
         example = {
             version = "~> 1.0.0"
-            source  = "customtfprovider"
+            source  = "terraform-example.com/customtfprovider"
         }
     }
 }

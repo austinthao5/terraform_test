@@ -1,3 +1,3 @@
-output "test" {
-  value = "This is a test"
+output "api_base_url" {
+  value = "TEST"
 }

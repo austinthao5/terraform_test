@@ -3,8 +3,8 @@ terraform {
 
   backend "s3" {
     region         = "us-west-1"
-    bucket         = austin-artifacts
-    key            = terraform_backend/example_backend.tfstate
+    bucket         = "austin-artifacts"
+    key            = "terraform_backend/example_backend.tfstate"
     encrypt        = true
   }
 }

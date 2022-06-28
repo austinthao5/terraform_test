@@ -2,7 +2,7 @@ variable "number" {
   type        = string
   default     = "1"
 }
-variable "name" {
+variable "some_name" {
   type        = string
-  default     = "default"
+  default     = "A default value"
 }

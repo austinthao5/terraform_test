@@ -1,1 +1,2 @@
-some_name = "Test Variable Name"
+number="33"
+some_name="github"

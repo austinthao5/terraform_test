@@ -1,4 +1,4 @@
 variable "number" {
-  type        = number
+  type        = string
   default     = "1"
 }

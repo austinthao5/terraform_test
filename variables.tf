@@ -1,5 +1,4 @@
-variable "region" {
-  description = "The region the VPC is in"
+variable "number" {
   type        = number
   default     = "1"
 }

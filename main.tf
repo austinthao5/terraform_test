@@ -3,6 +3,6 @@ resource "example_server" "my-server-name" {
 }
 
 
-output "testing" {
-  value = "This is a test"
+output "api_base_url" {
+  value = "Test"
 }

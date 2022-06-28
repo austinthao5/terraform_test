@@ -1,3 +1,3 @@
-resource "example_server" "my-server-name" {
+resource "example_server" var.name {
 	uuid_count = var.number
 }

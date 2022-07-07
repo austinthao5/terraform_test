@@ -1,3 +1,4 @@
 ---
 applications:
 - name: HELLO-WORLD
+no-route: true

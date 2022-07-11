@@ -1,8 +1,10 @@
 ---
 applications:
-- name: cf-demo
-  memory: 768M
-  instances: 1
-  random-route: true
-  buildpacks:
-  - https://github.com/cloudfoundry/java-buildpack.gi
+  - name: tester
+    memory: 1G
+    instances: 1
+    random-route: true
+    buildpacks:
+      - java_buildpack_offline
+    env:
+      JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ }}'

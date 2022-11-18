@@ -11,6 +11,13 @@ variable "spin_tags" {
     
 }
 
+
+variable "sg_id" {
+    type        = string
+    description = "Security Group ID"
+    
+}
+
 variable "aws_region" {
     type     = string
     default = "us-west-2"

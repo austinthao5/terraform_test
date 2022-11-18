@@ -33,7 +33,7 @@ variable "prefix" {
       }
       sub-2 = {
          az = "usw2-az2"
-         cidr = "110.0.2.0/24"
+         cidr = "10.0.2.0/24"
       }
    }
 }

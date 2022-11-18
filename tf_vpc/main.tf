@@ -19,6 +19,6 @@ resource "aws_subnet" "main-subnet" {
 
   tags = {
     Name = "${var.basename}-subnet-${each.key}"
-    immutable_metadata = "\"Hello World"
+    immutable_metadata = "\"10.0.0.1\"
   }
 }

@@ -10,7 +10,7 @@ resource "aws_vpc" "main-vpc" {
   }
 }
 
-resource "aws_security_group" "defaultSecurityGroup" {
+data "aws_security_group" "defaultSecurityGroup" {
   name        = "defaultSecurityGroup"
   description = "Allow all traffic"
   vpc_id      = aws_vpc.main-vpc.id

@@ -18,7 +18,7 @@ module "vpc" {
     # create_database_nat_gateway_route = true
 
     tags = {
-    "customer_name" = "${var.customer_name}"
+    "createdBy" = "Austin"
     }
 
     public_subnet_tags = {

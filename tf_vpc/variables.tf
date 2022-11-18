@@ -1,38 +1,3 @@
-variable "cluster_version" {
-    type = string
-    default = "1.22"
-    description = "EKS Cluster version"
-}
-
-variable "eks_node_type" {
-    type = string
-    default = "r5.large"
-    description = "EC2 instance type to use for EKS nodes"
-}
-
-variable "eks_node_count" {
-    type = number
-    default = "2"
-    description = "Worker node ASG desired capacity"
-}
-
-variable "eks_asg_max_size" {
-    type = number
-    default = "2"
-    description = "Worker node ASG max size"
-}
-
-# variable "db_instance_type" {
-#     type = string
-#     description = "RDS instance type"
-# }
-
-variable "route53_primary_zone_id" {
-    type = string
-    default = "Z0277253WQIZFHHI1E1M"    
-    description = "Route 53 zone ID to create A records in"
-}
-
 variable "aws_account" {
     type     = string
     default = "armory-support-dev"
@@ -45,10 +10,32 @@ variable "aws_region" {
     description = "AWS region"
 }
 
-variable "customer_name" {
-    type     = string
-    default = "shlomo-eks-tf"
-    description = "Customer account name"
+variable "tag_name" {
+   default = "ec2-vpc"
+}
+
+variable "vpc-cidr" {
+   default = "10.0.0.0/16"
+}
+
+variable "basename" {
+   description = "Prefix used for all resources names"
+   default = "at"
+}
+
+#map of maps for create subnets
+variable "prefix" {
+   type = map
+   default = {
+      sub-1 = {
+         az = "us-west-2a"
+         cidr = "10.0.1.0/24"
+      }
+      sub-2 = {
+         az = "us-west-2b"
+         cidr = "110.0.2.0/24"
+      }
+   }
 }
 
 # variable "aws_key" {

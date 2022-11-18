@@ -10,10 +10,10 @@ resource "aws_vpc" "main-vpc" {
   }
 }
 
-variable "security_group_id" {}
+# variable "security_group_id" {}
 
 data "aws_security_group" "selected" {
-  id = var.security_group_id
+  id = aws_vpc.main-vpc.default_security_group_id
 }
 
 # data "aws_security_group" "defaultSecurityGroup" {

@@ -15,5 +15,6 @@ resource "aws_subnet" "main-subnet" {
 
   tags = {
     Name = "${var.basename}-subnet-${each.key}"
+    immutable_metadata = "{'purpose':'ec2-vpc-${each.key}'}"
   }
 }

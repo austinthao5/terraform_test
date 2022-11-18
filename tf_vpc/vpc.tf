@@ -22,8 +22,7 @@ module "vpc" {
     }
 
     public_subnet_tags = {
-    "immutable_metadata" = "{"purpose":"ec2-vpc"}",
-    "createdBy"          = "Austin"
+    "immutable_metadata" = "{"purpose":"ec2-vpc"}"
     }
 
     private_subnet_tags = {

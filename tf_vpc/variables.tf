@@ -28,11 +28,11 @@ variable "prefix" {
    type = map
    default = {
       sub-1 = {
-         az = "us-west-2a"
+         az = "usw2-az1"
          cidr = "10.0.1.0/24"
       }
       sub-2 = {
-         az = "us-west-2b"
+         az = "uusw2-az2"
          cidr = "110.0.2.0/24"
       }
    }

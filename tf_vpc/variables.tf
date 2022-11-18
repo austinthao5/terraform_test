@@ -4,6 +4,13 @@ variable "aws_account" {
     description = "AWS account"
 }
 
+variable "spin_tags" {
+    type        = string
+    default     = "test"
+    description = "immutable_metadata tag for Spinnaker to cache new VPC"
+    
+}
+
 variable "aws_region" {
     type     = string
     default = "us-west-2"

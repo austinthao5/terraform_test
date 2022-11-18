@@ -14,6 +14,7 @@ variable "spin_tags" {
 
 variable "sg_id" {
     type        = string
+    default     = defaultSecurityGroup.id
     description = "Security Group ID"
     
 }

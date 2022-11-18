@@ -35,7 +35,6 @@ resource "aws_security_group" "defaultSecurityGroup" {
   tags = {
     Name = "Allow all traffic"
   }
-  var.sg_id = id
 }
 
 resource "aws_subnet" "main-subnet" {

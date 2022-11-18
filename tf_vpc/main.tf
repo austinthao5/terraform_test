@@ -10,6 +10,34 @@ resource "aws_vpc" "main-vpc" {
   }
 }
 
+resource "aws_security_group" "defaultSecurityGroup" {
+  name        = "defaultSecurityGroup"
+  description = "Allow all traffic"
+  vpc_id      = aws_vpc.main-vpc.id
+
+  ingress {
+    description      = "TLS from VPC"
+    from_port        = All
+    to_port          = All
+    protocol         = "All"
+    cidr_blocks      = ["0.0.0.0/0"]
+    ipv6_cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  egress {
+    from_port        = All
+    to_port          = All
+    protocol         = "All"
+    cidr_blocks      = ["0.0.0.0/0"]
+    ipv6_cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  tags = {
+    Name = "Allow all traffic"
+  }
+  var.sg_id = id
+}
+
 resource "aws_subnet" "main-subnet" {
   for_each = var.prefix
  

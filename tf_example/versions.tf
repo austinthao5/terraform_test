@@ -1,5 +1,8 @@
 terraform {
   required_providers {
-    example = "~> 1.0.0"
+    mycloud = {
+      source  = "example"
+      version = "~> 1.0.0"
+    }
   }
 }
